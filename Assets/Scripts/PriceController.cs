@@ -37,9 +37,9 @@ public class PriceController : MonoBehaviour
 
     public void calculateMoney()
     {
-        RUB.text = $"{data.RUB * float.Parse(myPrice.text)}";
-        PLN.text = $"{data.PLN * float.Parse(myPrice.text)}";
-        BYN.text = $"{data.BYN * float.Parse(myPrice.text)}";
-        YPN.text = $"{data.YPN * float.Parse(myPrice.text)}";
+        RUB.text = $"{ float.Parse(myPrice.text) / data.RUB}";
+        PLN.text = $"{ float.Parse(myPrice.text) / data.PLN}";
+        BYN.text = $"{ float.Parse(myPrice.text) / data.BYN}";
+        YPN.text = $"{ float.Parse(myPrice.text) / data.YPN}";
     }
 }
